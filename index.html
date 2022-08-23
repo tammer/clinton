@@ -119,18 +119,6 @@
     <!-- Placed js at the end of the document so the pages load faster -->
 
     <script src="js/vendor/jquery-3.1.1.min.js"></script>
-
-    <script>
-      $(function () {
-        $("#desktopMenu").load("header1.html", function () {
-          $.getScript("js/bootstrap.min.js", function () {
-            $.getScript("lib/js/jquery.nivo.slider.js", function () {
-              $.getScript("js/plugins.js");
-              $.getScript("js/main.js");
-            });
-          });
-        });
-      });
-    </script>
+    <script src="js/init.js"></script>
   </body>
 </html>
