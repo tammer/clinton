@@ -123,10 +123,12 @@
     <script>
       $(function () {
         $("#desktopMenu").load("header1.html", function () {
-          $.getScript("js/bootstrap.min.js");
-          $.getScript("lib/js/jquery.nivo.slider.js");
-          $.getScript("js/plugins.js");
-          $.getScript("js/main.js");
+          $.getScript("js/bootstrap.min.js", function () {
+            $.getScript("lib/js/jquery.nivo.slider.js", function () {
+              $.getScript("js/plugins.js");
+              $.getScript("js/main.js");
+            });
+          });
         });
       });
     </script>
